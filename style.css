@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+body{
+    height: 5000px;
+    background-color: hsl(0, 0%, 27%)
+}
+.back-to-top{
+  width: 1.5em;
+  height: 1.5em;
+  background-color: white;
+  position: fixed;
+  right: 2em;
+  bottom: 4em
+}
+.back-to-top span{
+    display: block;
+    background-color: white;
+    height: 1px;
+    position: fixed
+}
+.back-to-top span:first-of-type{
+    width: 5px;
+    height: 5px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    right: 4.5em;
+    bottom: 4.5em
+}
+.back-to-top span:nth-of-type(2){
+    width: 1em;
+    right: 4.6em;
+    bottom: 5.1em;
+    transform-origin: end center;
+    transform: rotate(50deg)
+}
+.back-to-top span:last-of-type{
+    width: 6em;
+    right: 5.4em;
+    bottom: 5.5em
+}
+.back-to-top .not{
+    position: fixed;
+    right: 14em;
+    bottom: 5.2em;
+    color: white;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid white;
+    padding: 1.5em
+}
