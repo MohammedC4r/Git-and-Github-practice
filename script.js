@@ -9,10 +9,12 @@ addEventListener("scroll", function () {
 });
 
 let notf = document.querySelector(".notif");
-back.onclick = function () {
-  scrollTo({
-  top: 0,
-  behvior: "smooth",
-  });
-  notf.style.display = "none";
+back.onclick = function (e) {
+  if (e.target == this){
+    scrollTo({
+    top: 0,
+    behavior: "smooth",
+    });
+    notf.style.display = "none";
+  }
 }
