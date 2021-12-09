@@ -53,3 +53,24 @@ body{
     border: 1px solid white;
     padding: 1.5em
 }
+.hidden-to-visible{
+  animation: vis-sl 4s
+}
+@keyframes vis-sl {
+  0%{
+    opacity: 0
+  }
+  100%{
+    opacity: 1
+  }
+}
+
+
+
+
+
+
+
+
+
+

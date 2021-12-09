@@ -1,14 +1,15 @@
 let back = document.querySelector(".back-to-top");
+let notf = document.querySelector(".notif");
 
 addEventListener("scroll", function () {
   if (scrollY >= 1500){
     back.style.display = "block";
+    notf.classList.add("hidden-to-visible");
   }else{
     back.style.display = "none";
   }
 });
 
-let notf = document.querySelector(".notif");
 back.onclick = function (e) {
   if (e.target == this){
     scrollTo({
